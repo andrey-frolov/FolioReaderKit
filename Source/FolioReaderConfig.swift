@@ -98,7 +98,7 @@ open class FolioReaderConfig: NSObject {
     // MARK: Colors
 
     /// Base header custom TintColor
-    open var tintColor = UIColor(rgba: "#6ACC50")
+    open var tintColor = UIColor(rgba: "#283593")
 
     /// Menu background color
     open var menuBackgroundColor = UIColor.white
@@ -148,16 +148,16 @@ open class FolioReaderConfig: NSObject {
     open var shouldHideNavigationOnTap = true
 
     /// Allow sharing option, if `false` will hide all sharing icons and options
-    open var allowSharing = true
+    open var allowSharing = false
 
     /// Enable TTS (Text To Speech)
-    open var enableTTS = true
+    open var enableTTS = false
     
     /// Display book title in navbar
     open var displayTitle = false
 
     /// Hide the page indicator
-    open var hidePageIndicator = false
+    open var hidePageIndicator = true
 
     /// Go to saved position when open a book
     open var loadSavedPositionForCurrentBook = true
@@ -181,10 +181,10 @@ open class FolioReaderConfig: NSObject {
     // MARK: Localized strings
 
     /// Localizes Highlight title
-    open var localizedHighlightsTitle = NSLocalizedString("Highlights", comment: "")
+    open var localizedHighlightsTitle = NSLocalizedString("Закладки", comment: "")
 
     /// Localizes Content title
-    open var localizedContentsTitle = NSLocalizedString("Contents", comment: "")
+    open var localizedContentsTitle = NSLocalizedString("Содержание", comment: "")
 
     /// Use the readers `UIMenuController` which enables the highlighting etc. The default is `true`. If set to false it's possible to modify the shared `UIMenuController` for yourself. Note: This doesn't disable the text selection in the web view.
     open var useReaderMenuController = true
@@ -193,16 +193,16 @@ open class FolioReaderConfig: NSObject {
     open var identifier: String?
 
     /// Localizes Highlight date format. This is a `dateFormat` from `NSDateFormatter`, so be careful 🤔
-    open var localizedHighlightsDateFormat = "MMM dd, YYYY | HH:mm"
-    open var localizedHighlightMenu = NSLocalizedString("Highlight", comment: "")
+    open var localizedHighlightsDateFormat = "dd MMM, YYYY | HH:mm"
+    open var localizedHighlightMenu = NSLocalizedString("Выделить", comment: "")
     open var localizedDefineMenu = NSLocalizedString("Define", comment: "")
     open var localizedPlayMenu = NSLocalizedString("Play", comment: "")
     open var localizedPauseMenu = NSLocalizedString("Pause", comment: "")
-    open var localizedFontMenuNight = NSLocalizedString("Night", comment: "")
+    open var localizedFontMenuNight = NSLocalizedString("Ночь", comment: "")
     open var localizedPlayerMenuStyle = NSLocalizedString("Style", comment: "")
-    open var localizedFontMenuDay = NSLocalizedString("Day", comment: "")
-    open var localizedLayoutHorizontal = NSLocalizedString("Horizontal", comment: "")
-    open var localizedLayoutVertical = NSLocalizedString("Vertical", comment: "")
+    open var localizedFontMenuDay = NSLocalizedString("День", comment: "")
+    open var localizedLayoutHorizontal = NSLocalizedString("Горизонтальная", comment: "")
+    open var localizedLayoutVertical = NSLocalizedString("Вертикальная", comment: "")
     open var localizedReaderOnePageLeft = NSLocalizedString("1 page left", comment: "")
     open var localizedReaderManyPagesLeft = NSLocalizedString("pages left", comment: "")
     open var localizedReaderManyMinutes = NSLocalizedString("minutes", comment: "")
@@ -210,17 +210,17 @@ open class FolioReaderConfig: NSObject {
     open var localizedReaderLessThanOneMinute = NSLocalizedString("Less than a minute", comment: "")
     open var localizedShareWebLink: URL? = nil
     open var localizedShareChapterSubject = NSLocalizedString("Check out this chapter from", comment: "")
-    open var localizedShareHighlightSubject = NSLocalizedString("Notes from", comment: "")
+    open var localizedShareHighlightSubject = NSLocalizedString("Заметки из", comment: "")
     open var localizedShareAllExcerptsFrom = NSLocalizedString("All excerpts from", comment: "")
     open var localizedShareBy = NSLocalizedString("by", comment: "")
-    open var localizedCancel = NSLocalizedString("Cancel", comment: "")
+    open var localizedCancel = NSLocalizedString("Отмена", comment: "")
     open var localizedShare = NSLocalizedString("Share", comment: "")
     open var localizedChooseExisting = NSLocalizedString("Choose existing", comment: "")
     open var localizedTakePhoto = NSLocalizedString("Take Photo", comment: "")
     open var localizedShareImageQuote = NSLocalizedString("Share image quote", comment: "")
     open var localizedShareTextQuote = NSLocalizedString("Share text quote", comment: "")
-    open var localizedSave = NSLocalizedString("Save", comment: "")
-    open var localizedHighlightNote = NSLocalizedString("Note", comment: "")
+    open var localizedSave = NSLocalizedString("Сохранить", comment: "")
+    open var localizedHighlightNote = NSLocalizedString("Заметка", comment: "")
 
     public convenience init(withIdentifier identifier: String) {
         self.init()
