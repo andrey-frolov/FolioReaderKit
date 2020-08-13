@@ -142,7 +142,7 @@ open class FolioReaderConfig: NSObject {
     open var canChangeScrollDirection = true
 
     /// Enable or disable hability to user change font style on menu.
-    open var canChangeFontStyle = true
+    open var canChangeFontStyle = false
     
     /// Should hide navigation bar on user tap
     open var shouldHideNavigationOnTap = true
