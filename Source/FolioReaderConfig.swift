@@ -110,7 +110,7 @@ open class FolioReaderConfig: NSObject {
     open var menuTextColor = UIColor(rgba: "#767676")
 
     /// Menu text color
-    open var menuTextColorSelected = UIColor(rgba: "#6ACC50")
+    open var menuTextColorSelected = UIColor(rgba: "#283593")
     
     // Day mode nav color
     open var daysModeNavBackground = UIColor.white
@@ -195,7 +195,7 @@ open class FolioReaderConfig: NSObject {
     /// Localizes Highlight date format. This is a `dateFormat` from `NSDateFormatter`, so be careful 🤔
     open var localizedHighlightsDateFormat = "dd MMM, YYYY | HH:mm"
     open var localizedHighlightMenu = NSLocalizedString("Выделить", comment: "")
-    open var localizedDefineMenu = NSLocalizedString("Define", comment: "")
+    open var localizedDefineMenu = NSLocalizedString("Словарь", comment: "")
     open var localizedPlayMenu = NSLocalizedString("Play", comment: "")
     open var localizedPauseMenu = NSLocalizedString("Pause", comment: "")
     open var localizedFontMenuNight = NSLocalizedString("Ночь", comment: "")
