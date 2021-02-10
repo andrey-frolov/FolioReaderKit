@@ -39,7 +39,7 @@ html {
 }
 
 body {
-    padding: 1em !important;
+    padding: 40px 20px !important;
     margin: 0 !important;
     overflow: hidden !important;
 }
@@ -50,9 +50,9 @@ body {
 
 /* Custom padding for tablets */
 @media only screen and (min-device-width: 768px){
-/*    body {*/
-/*        padding: 0px 20px !important;*/
-/*    }*/
+    body {
+        padding: 60px 80px !important;
+    }
 }
 
 /* Table */
@@ -169,8 +169,6 @@ img, svg, audio, video {
     box-sizing: border-box;
     object-fit: contain;
     page-break-inside: avoid;
-    padding: 0 !important;
-    margin: 0 !important;
 }
 
 /*audio {*/
@@ -292,19 +290,121 @@ html.nightMode .highlight_underline {border-bottom: 2px solid rgba(240, 40, 20, 
 /*.raleway, .raleway p, .raleway span, .raleway div { font-family: "Raleway", sans-serif !important; }*/
 
 
-body.textSizeOne { font-size: 70% !important; }
-body.textSizeTwo { font-size: 85% !important; }
-body.textSizeThree { font-size: 100% !important; }
-body.textSizeFour { font-size: 115% !important; }
-body.textSizeFive { font-size: 130% !important; }
+html.textSizeOne {
+	font-size: 8px !important;
+	line-height: 1.4 !important;
+}
+html.textSizeTwo {
+	font-size: 10px !important;
+	line-height: 1.4 !important;
+}
+html.textSizeThree {
+	font-size: 12px !important;
+	line-height: 1.4 !important;
+}
+html.textSizeFour {
+	font-size: 14px !important;
+	line-height: 1.4 !important;
+}
+html.textSizeFive {
+	font-size: 16px !important;
+	line-height: 1.4 !important;
+}
 
-/*
-body.textSizeOne { font-size: 13px !important; }
-body.textSizeTwo { font-size: 15px !important; }
-body.textSizeThree { font-size: 17px !important; }
-body.textSizeFour { font-size: 19px !important; }
-body.textSizeFive { font-size: 21px !important; }
-*/
+@media screen and (min-width: 568px) {
+	html.textSizeOne {
+		font-size: 10px !important;
+		line-height: 1.25 !important;
+	}
+	html.textSizeTwo {
+		font-size: 12px !important;
+		line-height: 1.25 !important;
+	}
+	html.textSizeThree {
+		font-size: 14px !important;
+		line-height: 1.25 !important;
+	}
+	html.textSizeFour {
+		font-size: 16px !important;
+		line-height: 1.25 !important;
+	}
+	html.textSizeFive {
+		font-size: 18px !important;
+		line-height: 1.25 !important;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	html.textSizeOne {
+		font-size: 11px !important;
+	}
+	html.textSizeTwo {
+		font-size: 13px !important;
+	}
+	html.textSizeThree {
+		font-size: 15px !important;
+	}
+	html.textSizeFour {
+		font-size: 17px !important;
+	}
+	html.textSizeFive {
+		font-size: 19px !important;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	html.textSizeOne {
+		font-size: 12px !important;
+	}
+	html.textSizeTwo {
+		font-size: 14px !important;
+	}
+	html.textSizeThree {
+		font-size: 16px !important;
+	}
+	html.textSizeFour {
+		font-size: 18px !important;
+	}
+	html.textSizeFive {
+		font-size: 20px !important;
+	}
+}
+
+@media screen and (min-width: 2560px) {
+	html.textSizeOne {
+		font-size: 16px !important;
+	}
+	html.textSizeTwo {
+		font-size: 19px !important;
+	}
+	html.textSizeThree {
+		font-size: 22px !important;
+	}
+	html.textSizeFour {
+		font-size: 25px !important;
+	}
+	html.textSizeFive {
+		font-size: 28px !important;
+	}
+}
+
+@media screen and (min-width: 3840px) {
+	html.textSizeOne {
+		font-size: 26px !important;
+	}
+	html.textSizeTwo {
+		font-size: 30px !important;
+	}
+	html.textSizeThree {
+		font-size: 34px !important;
+	}
+	html.textSizeFour {
+		font-size: 38px !important;
+	}
+	html.textSizeFive {
+		font-size: 42px !important;
+	}
+}
 
 h1 {
     font-size: 2em;
@@ -335,15 +435,7 @@ body {
     -webkit-hyphens: auto !important;
     hyphens: auto !important;
 }
-p, span, div {
-    font-size: 1em;
-    line-height: 1.5 !important;
-}
 @media only screen and (min-device-width: 600px) {
-    div {
-        font-size: 1em;
-        line-height: 1.438em !important;
-    }
     body {
         -webkit-hyphens: none !important;
         hyphens: none !important;
